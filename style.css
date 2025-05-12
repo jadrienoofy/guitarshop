@@ -37,6 +37,7 @@ body {
 .navsearch input {
     height: 30px;
     width: 400px;
+    outline: none;
     border-radius: 10px;
     border: none;
     color: rgb(172, 172, 172);
