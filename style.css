@@ -2,10 +2,12 @@
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
+
 body {
     margin: 0;
     padding: 0;
 }
+
 .navbar {
     height: 100px;
     width: 100%;
@@ -16,15 +18,21 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
 .navleft {
     display: flex;
     align-items: center;
     padding: 0 40px;
 }
+.navleft img {
+    display: none;
+}
+
 .navleft h1 {
     font-weight: 800;
     font-size: 40px;
 }
+
 .navsearch {
     background-color: ghostwhite;
     width: 400px;
@@ -34,6 +42,7 @@ body {
     border-radius: 10px;
     padding: 0 10px;
 }
+
 .navsearch input {
     height: 30px;
     width: 400px;
@@ -44,22 +53,60 @@ body {
     font-weight: 400;
     font-size: 15px;
 }
+
 .navright {
     height: 100px;
     display: flex;
     align-items: center;
     padding: 0 40px;
 }
+
 .navright img {
     height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
+
 .navright li {
     list-style: none;
 }
+
 .navright ul {
     gap: 40px;
     display: flex;
 }
+.navright .notif {
+    position: relative;
+}
+.notif hr {
+    width: 109%; /* Adjust the width of the line */
+    margin: 10px auto;
+}
+.navright .notif .dropdown-content {
+    height: 200px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: -90px;
+    width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.navright .notif:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Hover effect for images */
+.navright ul li:hover img {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    filter: brightness(1.2); /* Increase brightness for emphasis */
+}
+
 /* Hero Section */
 .hero {
     background: url('images/noe.jpg') no-repeat center center/cover;
@@ -87,4 +134,473 @@ body {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+}
+
+.top {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.top h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+.top-con {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.card {
+    width: 280px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    color: #4E342E;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.buy-btn {
+    background-color: #FF5722;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: #e64a19;
+}
+
+.ads {
+    background-color: #fdfdfd;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.ads h1 {
+    font-size: 36px;
+    color: #4E342E;
+    margin-bottom: 40px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.video-box {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.video-box p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.reviews {
+    background-color: #f8f5f2;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.reviews h1 {
+    font-size: 36px;
+    color: #4E342E;
+    margin-bottom: 40px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.review-card {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.review-card h4 {
+    font-size: 14px;
+    color: #888;
+}
+
+.stars {
+    font-size: 20px;
+    color: #FFD700; /* Gold color */
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.about {
+    background-color: #fafafa;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.about h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+/* Base styles (already present) */
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .navleft img {
+        width: auto;
+        display: block;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+    .navright ul li:hover img {
+        transform: none !important;
+        filter: none !important;
+    }
+
+    /* Prevent notification dropdown from showing on hover */
+    .navright .notif:hover .dropdown-content {
+        display: none !important;
+    }
+
+    /* Optional: disable card hover animation */
+    .card:hover {
+        transform: none !important;
+    }
+
+    .review-card:hover {
+        transform: none !important;
+    }
+    .dropdown-content {
+        display: none !important;
+    }
+    .navbar {
+        flex-direction: column;
+        height: 190px;
+        margin: 0;
+        width: 100%;
+        overflow-y: hidden;
+        padding: 15px 40px;
+    }
+
+    .navleft h1 {
+        display: none;
+    }
+
+    .navsearch {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navsearch input {
+        width: 100%;
+    }
+
+    .navright {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .navright ul {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        margin-left: 0;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .navright li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero {
+        height: 250px;
+        background-size: cover;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .top h1 {
+        font-size: 28px;
+    }
+
+    .top-con {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .top-con {
+        display: flex;
+        align-items: center;
+    }
+    .card {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 120px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .buy-btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .ads {
+        padding: 40px 20px;
+    }
+
+    .video-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .video-box {
+        width: 70%;
+    }
+
+    .reviews .review-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+
+    .review-text {
+        font-size: 14px;
+    }
+
+    .review-card h4 {
+        font-size: 12px;
+    }
+
+    .stars {
+        font-size: 18px;
+    }
+
+    .about h1 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+}
+
+/* Very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        width: 100%;
+        padding: 15px 24px;
+        display: flex;
+    }
+
+    .navleft h1 {
+        font-size: 24px;
+    }
+
+    .navsearch {
+        width: 90%;
+    }
+    .navright ul {
+        display: flex;
+        margin-left: -20px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .top h1 {
+        font-size: 24px;
+    }
+    .top-con {
+        display: flex;
+        align-items: center;
+    }
+    .card {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .card img {
+        height: 120px;
+        object-fit: contain;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 10px;
+    }
+
+    .buy-btn {
+        font-size: 12px;
+    }
+    .video-container {
+        display: flex;
+        align-items: center;
+    }
+    .video-box {
+        width: 70%;
+    }
+    .review-container {
+        display: flex;
+        align-items: center;
+    }
+    .review-card {
+        width: 100%;
+    }
+
+    .review-text {
+        font-size: 12px;
+    }
+
+    .review-card h4 {
+        font-size: 10px;
+    }
+
+    .stars {
+        font-size: 16px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+}
+@media  (max-width: 400px) {
+    .navbar {
+        width: 89%;
+        overflow: hidden;
+        padding: 15px 21px;
+    }
+    .navright ul {
+        margin-left: -35px;
+    }
 }

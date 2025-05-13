@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,6 +13,7 @@
 <body>
     <nav class="navbar">
         <div class="navleft">
+            <img src="images/icon.png" alt="">
             <h1>Guitar Shop</h1>
         </div>
         <div class="navsearch">
@@ -19,9 +21,15 @@
         </div>
         <div class="navright">
             <ul>
-                <li><a href="#"><img src="images/home.png" alt="Home Icon"></a></li>
+                <li><a href="#"><img src="images/home.png" alt="Home Icon" style="height: 37px;"></a></li>
                 <li><a href="#"><img src="images/cart.png" alt="Cart Icon"></a></li>
-                <li><a href="#"><img src="images/notif.png" alt="Notification Icon"></a></li>
+                <li class="notif">
+                    <a href="#"><img src="images/notif.png" alt="Notification Icon"></a>
+                        <div class="dropdown-content">
+                            <hr style="margin-left: -9px;">
+                            <p>No Notification</p>
+                        </div>
+                </li>
                 <li><a href="#"><img src="images/acc.webp" alt="Account Icon"></a></li>
             </ul>
         </div>
@@ -35,5 +43,88 @@
             <button>Shop Now</button>
         </div>
     </section>
+    <!-- Top Products Section -->
+<section class="top">
+    <h1>Top Products</h1>
+</section>
+
+<!-- Product Cards Section -->
+<section class="top-con">
+    <div class="card">
+        <img src="images/pick.webp" alt="Guitar Pick" style="object-fit: contain;">
+        <h3>Guitar Pick</h3>
+        <p>₱250 - High quality pick for precise strumming.</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="card">
+        <img src="images/rj.avif" alt="Acoustic Guitar" style="object-fit: fill; width: auto;">
+        <h3>Acoustic Guitar</h3>
+        <p>₱20,000 - Warm tone and smooth frets for beginners.</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="card">
+        <img src="images/capo.jpg" alt="Capo">
+        <h3>Capo</h3>
+        <p>₱1,200 - Quick release, perfect for gig setups.</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+</section>
+    <!-- YouTube Advertisements Section -->
+<section class="ads">
+    <h1>Reviewing Our Products</h1>
+    <div class="video-container">
+        <div class="video-box">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iPZye2qGSxA?si=l-oRGfKt5TqcXtcy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>&copy;Pareng Don: Our New Acoustic Series</p>
+        </div>
+        <div class="video-box">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Qfq6IcfMa40?si=31H6vXcq1QQcqvp5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>&copy;Pax: RJ Skycaster Review</p>
+        </div>
+        <div class="video-box">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y-RLUlSESCU?si=aoXYFqrHv5CdvJDJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>&copy;RJ Guitars: RJ Budget Amplifier 15 Watts</p>
+        </div>
+    </div>
+</section>
+    <!-- Customer Reviews Section -->
+<section class="reviews">
+    <h1>Customer Reviews</h1>
+    <div class="review-container">
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Absolutely love my new acoustic guitar from Guitar Shop! Great quality and fast delivery."</p>
+            <h4>- Mark D., Musician</h4>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p class="review-text">"The capo works flawlessly. It’s solid, easy to use, and feels premium. Highly recommended!"</p>
+            <h4>- Alyssa P., Gig Performer</h4>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"I’ve bought several accessories here and they never disappoint. The staff is super helpful too."</p>
+            <h4>- Carlos V., Guitar Collector</h4>
+        </div>
+    </div>
+</section>
+    <!-- About Section -->
+<section class="about">
+    <h1>About Guitar Shop</h1>
+    <p>
+        At Guitar Shop, we’re passionate about helping musicians find the perfect gear. Whether you’re just starting out or a seasoned player, we offer a wide range of guitars, accessories, and expert advice to support your musical journey. 
+    </p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Guitar Shop. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:aujsc.aguilar.jadrienroi@gmail.com">aujsc.aguilar.jadrienroi@gmail.com</a></p>
+    </div>
+</footer>
+
 </body>
 </html>
